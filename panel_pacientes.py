@@ -256,7 +256,7 @@ class DialogEditar(wx.Dialog):
         sz_scroll.Add(lbl_turno, 0, wx.ALL, 5)
         
         sz_turno = wx.BoxSizer(wx.HORIZONTAL)
-        self.dia_turno = crear_campo(self, sz_turno, "Día:", widget=wx.adv.DatePickerCtrl(self, style=wx.adv.DP_DROPDOWN))
+        self.dia_turno = crear_campo(self, sz_turno, "Día:", widget=wx.adv.DatePickerCtrl(self, style=wx.adv.DP_DROPDOWN | wx.adv.DP_SHOWCENTURY))
         self.hora_turno = crear_campo(self, sz_turno, "Hora:", widget=wx.adv.TimePickerCtrl(self))
         sz_scroll.Add(sz_turno, 0, wx.EXPAND | wx.ALL, 0)
 

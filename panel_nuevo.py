@@ -17,7 +17,7 @@ class PanelNuevo(wx.Panel):
         # --- IZQUIERDA: Datos y Turno ---
         self.txt_nombre = crear_campo(self, sz_izq, "Nombre y Apellido:") # Campo Nombre
         self.txt_dni = crear_campo(self, sz_izq, "Documento (D.N.I):") # Campo DNI
-        self.fec_nacimiento = crear_campo(self, sz_izq, "Fecha de Nacimiento:", widget=wx.adv.DatePickerCtrl(self, style=wx.adv.DP_DROPDOWN)) # Campo de fecha de nacimiento usando el widget de calendario (DatePickerCtrl)
+        self.fec_nacimiento = crear_campo(self, sz_izq, "Fecha de Nacimiento:", widget=wx.adv.DatePickerCtrl(self, style=wx.adv.DP_DROPDOWN | wx.adv.DP_SHOWCENTURY)) # Campo de fecha de nacimiento usando el widget de calendario (DatePickerCtrl)
         self.txt_telefono = crear_campo(self, sz_izq, "Teléfono de Contacto:") # Campo Telefono
         self.txt_ocupacion = crear_campo(self, sz_izq, "Ocupación / Trabajo:") # Campo Ocupacion
         self.txt_valor = crear_campo(self, sz_izq, "Valor de la Sesión (Ej: $5000):")
@@ -29,7 +29,7 @@ class PanelNuevo(wx.Panel):
         sz_izq.Add(lbl_turno, 0, wx.ALL, 5) # Lo añade a la columna izquierda
         
         sz_turno = wx.BoxSizer(wx.HORIZONTAL) # Organizador horizontal para poner Fecha y Hora lado a lado
-        self.dia_turno = crear_campo(self, sz_turno, "Día:", widget=wx.adv.DatePickerCtrl(self, style=wx.adv.DP_DROPDOWN)) # Calendario turno
+        self.dia_turno = crear_campo(self, sz_turno, "Día:", widget=wx.adv.DatePickerCtrl(self, style=wx.adv.DP_DROPDOWN | wx.adv.DP_SHOWCENTURY)) # Calendario turno
         self.hora_turno = crear_campo(self, sz_turno, "Hora:", widget=wx.adv.TimePickerCtrl(self)) # Reloj del turno
         sz_izq.Add(sz_turno, 0, wx.EXPAND | wx.ALL, 0) # Añade fecha y hora a la columna izquierda
         
