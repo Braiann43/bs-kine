@@ -39,4 +39,4 @@ Este proyecto fue desarrollado como parte de mi formación académica y profesio
 **Braian Nicolas Videla** 
 Estudiante de la Tecnicatura Universitaria en Desarrollo de Software en la Universidad Nacional de Pilar (UNPilar).
 
-Este proyecto es de código abierto y se distribuye bajo los términos de la [Licencia MIT](LICENSE). Eres libre de utilizar y modificar este software, siempre y cuando se mantenga el reconocimiento al autor original.
+Este proyecto es de código abierto y se distribuye bajo los términos de la [Licencia MIT](LICENSE). Sos libre de utilizar y modificar este software, siempre y cuando se mantenga el reconocimiento al autor original.
